@@ -27,19 +27,19 @@ public class EjemploPolimorfismo3 {
         integrantes.add(delBosque);
         integrantes.add(iniesta);
         integrantes.add(raulMartinez);
-        
+
         // ENTRENAMIENTO
-       // System.out.println("\nEntrenamiento: Todos los integrantes tienen su función en un entrenamiento (Especialización)");
-         for (PersonaEquipo integrante : integrantes) {
-            System.out.print(integrante.getNombre() + " " + integrante.getApellidos() + " -> ");
-            integrante.entrenamiento();
-       }
+        System.out.println("\nEntrenamiento: Todos los integrantes tienen su "
+                + "función en un entrenamiento (Especialización)\n");
         
-        // for (int i=0; i<integrantes.size (); i++){
-          //  integrantes.get(i).entrenamiento();
+        for (PersonaEquipo integrante : integrantes) {
+            integrante.entrenamiento();
         }
         
+        System.out.println();
 
     }
+
+}
 
 

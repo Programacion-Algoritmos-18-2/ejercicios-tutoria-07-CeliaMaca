@@ -15,7 +15,7 @@ public class Futbolista extends PersonaEquipo {
    private String nombre_demarcacion;
 
     public Futbolista(int id, String nombre, String apellidos, int edad, int n_dorsal, String demarcacion) {
-        super(id, nombre, apellidos, edad); // valores atributos clase padre
+        super(id, nombre, apellidos, edad);
         setDorsal(n_dorsal);
         setDemarcacion(demarcacion);
     }
@@ -39,8 +39,9 @@ public class Futbolista extends PersonaEquipo {
    // constructor, getter y setter
 
    @Override
-   public void entrenamiento() { 
-      System.out.printf("%s %s Realiza un entrenamiento (Clase Futbolista). Su número es %d\n",this.nombre,this.apellidos, getDorsal());
+   public void entrenamiento() {
+     System.out.printf("%s %s,realiza un entrenamiento (Clase Futbolista). "
+              + "Su número o dorsal es %d\n", getNombre(),getApellidos(), getDorsal());
    }
 
    

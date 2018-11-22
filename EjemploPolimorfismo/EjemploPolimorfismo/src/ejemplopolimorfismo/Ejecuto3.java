@@ -5,23 +5,13 @@
  */
 package ejemplopolimorfismo;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author reroes
  */
-public class EjemploPolimorfismo {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Ejecuto3 {
     public static void main(String[] args) {
-        // TODO code application logic here
- 
-
-
-
+        //
+        
     }
-    
 }

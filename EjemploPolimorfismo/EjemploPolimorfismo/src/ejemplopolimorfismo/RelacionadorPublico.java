@@ -9,14 +9,15 @@ package ejemplopolimorfismo;
  *
  * @author reroes
  */
-public class PresidenteEquipo extends PersonaEquipo{
+public class RelacionadorPublico extends PersonaEquipo {
 
-    public PresidenteEquipo(int id, String nombre, String apellidos, int edad) {
+    public RelacionadorPublico(int id, String nombre, String apellidos, int edad) {
         super(id, nombre, apellidos, edad);
     }
     
     @Override
-   public void entrenamiento(){
-       System.out.println("Presidente: supervisa a los futbolistas y al entrenador"); 
+    public void entrenamiento(){
+        System.out.printf("%s %s Relacionador Publico (da a conocer el entrenamiento)\n",
+                getNombre(), getApellidos());
     }
 }
